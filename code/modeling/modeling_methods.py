@@ -260,6 +260,9 @@ class Recommendation():
     
     
     def hybrid_recommendation(self, product_id, content_sim_matrix, product_user_matrix, products, top_n=10):
+        '''
+        Algorítimo de recomendação
+        '''
         idx = products.index[products['product_id'] == product_id][0]
         
         # similaridade entre pares
